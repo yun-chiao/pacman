@@ -1,0 +1,18 @@
+#N canvas 939 311 450 567 12;
+#X obj 135 13 noise~;
+#X obj 209 115 *~;
+#X obj 50 15 osc~ 180;
+#X obj 270 110 adsr 10 50 0 0;
+#X msg 281 63 1;
+#X obj 276 35 inlet;
+#X obj 210 168 outlet~;
+#X obj 49 55 gain 0.8;
+#X obj 133 45 gain 0.4;
+#X connect 0 0 8 0;
+#X connect 1 0 6 0;
+#X connect 2 0 7 0;
+#X connect 3 0 1 1;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+#X connect 7 0 1 0;
+#X connect 8 0 1 0;
